@@ -23,39 +23,26 @@
  </ul>
 <body>
 
-    <form>
-        <!--Legenda para Nome--> 
-   <label for="campo_nome" >Nome:</label>
-        <Input id=" campo_nome" type="text" placeholder="Digite seu nome aqui" required>
-           <br> <br>
-       <!--Legenda para Email-->
-   <label for="campo_email" >Email:</label>
-        <Input id=" campo_email" type="email" placeholder="Digite seu email"required>
-           <br> <br>
-        <!--Legenda para Senha-->
- <labe for="campo" >Fale Sobre o Problema:</label>
-        <Input id=" campo_senha" type="text" placeholder=""
-        required>           
-           <br> <br>
-           <hr>
+     
+        <form action="https://formsubmit.co/dev.sanped@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/sucesso.html"/>
+        
+            <input type="hidden" name="_autoresponse" value="Já Recebemos a sua solicitação, em breve retornaremos. Desde já, agradecemos por sua confiança"/>
+            <input type="hidden" name="_captcha" value="false"/>
+        <input type="text" name="name" placeholder="Nome" />
+        <br>
+        <input type="email" name="email" placeholder="Endereço 
+        de e-mail">
+        <br>
+
+        <input type="text" name="Subject" placeholder="Assunto" />
+        <br>
+        <textarea name="message" placeholder="Mensagem"></textarea>
+        <br>
+        <button type="submit">Solicitar Orçamento</button>
+        </form>
 
 <!--Multipla escolha-->
-            <h2> Qual Seria O Produto?</h2>
-               <input type="checkbox" name="item1" value="Sapatos">
-                <label for="item1">sapatos</label>
-            <br><br>
-               <input type="checkbox" name="item2" value="Tênis">
-                   <label for="item2">Tênis</label>
-                    <br><br>
-            <input type="checkbox" name="item3" value="Sandálias">
-                <label for="item3">Sandálias</label>
-                <br><br>
-                 <input type="checkbox" name="item4" value="Botas">
-             <label for="item4">Botas</label>
-                 <br><br>
-           <!--Campo Input Type Submit-->
-           <input style="font-size: 25px;" type="submit"  value="Solicitar Orçamento">
+           
 </form>
-
-</body>
 </html>
