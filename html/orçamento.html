@@ -23,27 +23,39 @@
      </li>
  </ul>
 <body>
-
-     
+<h1>Fale conosco através do formulario Abaixo!!</h1>
+      <div class="contact-form">
         <form action="https://formsubmit.co/dev.sanped@gmail.com" method="POST">
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/sucesso.html"/>
         
             <input type="hidden" name="_autoresponse" value="Já Recebemos a sua solicitação, em breve retornaremos. Desde já, agradecemos por sua confiança"/>
             <input type="hidden" name="_captcha" value="false"/>
-        <input type="text" name="name" placeholder="Nome" />
+        
+            <label for="email">Nome:</label><br>
+            <input type="text" name="name" placeholder="Nome"required />
         <br>
+        <label for="email">Email:</label> <br>
         <input type="email" name="email" placeholder="Endereço de e-mail" height=50px width=500px
          required>
         <br>
+        <Label for="subject">Assunto:</Label><br>
+        <select  id="subject" required>
+            <Option value="prazo">Prazo de entrega</Option>
+            <Option value="Orçamento">Orçamento</Option>
+            <Option value="Doar">Doar</Option>
+        </select>
 
-        <input type="text" name="Subject" placeholder="Assunto" required/>
         <br>
+    
+        <Label for="subject">Mensagem:</Label><br>
         <textarea name="message" placeholder="Mensagem"required></textarea>
         <br>
+        <div class="Contact-button"></div>
         <button type="submit">Solicitar Orçamento</button>
-        </form>
+        </form></div>
 
 <!--Multipla escolha-->
            
 </form>
+</body>
 </html>
