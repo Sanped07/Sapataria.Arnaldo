@@ -26,40 +26,45 @@ h2,
 p {
     font-size: 25px;
     padding: 15px;
-
 }
 
 #sap {
     font-size: 45px;
 }
-a:hover{
-    color: rgb(230, 181, 108);
-    text-decoration: double;
-    border: 1px solid rgb(252, 252, 252);
-    
-}
 
+/*Espaçameno da navbar*/
+.navbar{
+    margin: 10px;
+    padding:10px;
 
-.navbar {
-    margin: auto;
   }
-  
+  /* bARRA DE NAVEGAÇÃO*/
   .navbar ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-around;
+    border:#c59101 double 15px;
   }
-  
-  .navbar li {
-    padding: 20px;
-  }
-  
-  .navbar a {
+  /* lins NavBar*/
+  .navbar a{
+    color: aliceblue;
+    font-size: 25px;
+    font-style: italic;
+    cursor: pointer;
     text-decoration: none;
-    padding-bottom: 5px;
-    color: var(--cor-secundaria);
+
+  }
+  /*  NavBar dos links*/
+  .navbar li{
+    padding: 10px;
+    color:white;
+  }
+  .navbar li:hover{
+    padding: 20px;
+    background-color: rgba(224, 192, 11, 0.884);
+
   }
   
-  .navbar a:hover {
+  .navbar{
     border-bottom: var(--cor-secundaria) solid 2px;
     transition: 100ms;
   }
@@ -68,7 +73,7 @@ a:hover{
 
 button{
     background: linear-gradient(120deg, #c59101, rgb(230, 181, 108));
-    padding: 12px;
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -99,9 +104,6 @@ form{
 }
 
 
-
-
-
 /*Catalogos*/
 .catlog {
     background-color: rgb(0, 0, 0);
@@ -123,7 +125,8 @@ img{
 /*Rodapé das páginas*/
     rodape{
         text-align:start;
-        display: flex;
+        display:flex;
+        border: 5px solid ;
         padding: 3px;
         background-color:DarkSalmon;
         color:white;
